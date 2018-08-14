@@ -1,1 +1,35 @@
 example@form page
+<h1>New Job Application</h1>
+
+<%= form_for @job_application do |f| %>
+
+<p>
+  <%= f.label :full_name %>
+  <%= f.text_field :full_name %>
+</p>
+
+<p>
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+</p>
+
+<p>
+  <%= f.label :hobby %>
+  <%= f.text_field :hobby %>
+</p>
+
+<p>
+  <%= f.label :years_experience %>
+  <%= f.text_field :years_experience %>
+</p>
+
+<p>
+  <%= f.label :available_date %>
+  <%= f.text_field :available_date %>
+</p>
+
+<p>
+    <%= f.submit %>
+</p>
+
+<% end %>
